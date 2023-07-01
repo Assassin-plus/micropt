@@ -172,3 +172,4 @@ miloyip(2017)[svpng v0.1.1](https://github.com/miloyip/svpng)
 Ivandeve(2018)[LodePNG](https://github.com/lvandeve/lodepng)
 
 nothings(2016)[stb](https://github.com/nothings/stb)
+syoyo(2016)[tinyobjloader](https://github.com/tinyobjloader/tinyobjloader)
