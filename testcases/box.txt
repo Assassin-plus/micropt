@@ -1,0 +1,208 @@
+
+PerspectiveCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 200
+    height 200
+}
+
+Lights {
+    numLights 3
+    DirectionalLight {
+        direction -1 0 0
+	color 0.7 0.7 0.7
+    }
+    DirectionalLight {
+        direction 1 1 0
+	color 0.9 0.9 0.9
+    }
+    DirectionalLight {
+        direction 0 0 1
+    color 0.2 0.2 0.2
+    }
+}
+
+Background {
+    color 0.1 0.2 0.7
+}
+
+Materials {
+    numMaterials 8
+    GIMaterial { 
+	  diffuseColor 0.75 0.25 0.25
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.25 0.25 0.75
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.75 0.75 0.75
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0 0 0
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.999 0.999 0.999
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      SPECULAR
+	}
+    GIMaterial { 
+	  diffuseColor 0.999 0.999 0.999
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      REFRACTION
+	}
+    GIMaterial { 
+	  diffuseColor 0 0 0
+	  specularColor 0 0 0
+	  emissionColor 12 12 12
+	}
+    PhongMaterial {	
+        diffuseColor 0.79 0.66 0.44
+	specularColor 1 1 1 
+	shininess 20
+    }
+}
+
+Group {
+    numObjects 10
+    MaterialIndex 0
+    Plane {
+        normal -1 0 0
+        offset 1
+    }
+    MaterialIndex 1
+    Plane {
+        normal 1 0 0
+        offset 99
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 0 -1
+        offset 0
+    }
+    Plane {
+        normal 0 -1 0
+        offset 0
+    }
+    Plane {
+        normal 0 1 0
+        offset 81.6
+    }
+    MaterialIndex 3
+    Plane {
+        normal 0 0 1
+        offset 0
+    }
+    MaterialIndex 4
+    Sphere {
+        center 27 16.5 47
+        radius 16.5
+    }
+    
+    MaterialIndex 5
+    Sphere {
+        center 73 16.5 78
+        radius 16.5
+    }
+
+    MaterialIndex 6
+    Transform {
+        Translate  50 52 50 
+		Scale  5 5 5
+    Curves {
+        numCurves 1
+        BSplineCurve {
+            controls
+                [   0.0   -0.459543  0 
+                    0.0   -0.459544  0 
+                    0.0   -0.459545  0 
+                    -0.778629   0.0  0 
+                    -1.127554   0.0  0 
+                    -1.112097   0.084005  0 
+                    -1.164785   1.105511  0 
+                    -0.991667   2.328629  0 
+                    -1.029301   2.50336  0 
+                    -1.0888   2.3456  0 
+                    -1.278   1.1628  0 
+                    -1.2148   0.0552  0 
+                    -0.9156   -0.3812  0 
+                    -0.3804   -0.622  0 
+                    -0.144   -0.9684  0 
+                    -0.0968   -1.48  0 
+                    -0.1284   -2.1124  0 
+                    -0.3172   -2.2028  0 
+                    -0.9944   -2.2628  0 
+                    -1.2148   -2.3232  0 
+                    -1.1992   -2.3984  0 
+                    -1.0576   -2.4588  0 
+                    -0.7112   -2.4588  0 
+                    0.0   -2.4588  0 
+                    0.0   -2.458801  0 
+                    0.0   -2.458802  0 
+                ]
+            knots
+                [
+                    0
+                    0.0333333
+                    0.0666667
+                    0.1
+                    0.133333
+                    0.166667
+                    0.2
+                    0.233333
+                    0.266667
+                    0.3
+                    0.333333
+                    0.366667
+                    0.4
+                    0.433333
+                    0.466667
+                    0.5
+                    0.533333
+                    0.566667
+                    0.6
+                    0.633333
+                    0.666667
+                    0.7
+                    0.733333
+                    0.766667
+                    0.8
+                    0.833333
+                    0.866667
+                    0.9
+                    0.933333
+                    0.966667
+                    1
+                ]
+            axis
+            {
+                point1 0 0 0
+                point2 1 1 1
+            }
+        }
+    }
+    }
+    MaterialIndex 6
+    Sphere {
+        center 50 681.33 81.6
+        radius 600
+    }
+    
+    
+}
+

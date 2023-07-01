@@ -1,0 +1,157 @@
+
+PerspectiveCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 2000
+    height 2000
+}
+
+Lights {
+    numLights 0
+}
+
+Background {
+    color 0.1 0.2 0.7
+}
+
+Materials {
+    numMaterials 12
+    GIMaterial { 
+	  diffuseColor 0.75 0.25 0.25
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.25 0.25 0.75
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.75 0.75 0.75
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0 0 0
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.75 0.25 0.75
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.5 0.5 0.9
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      REFRACTION
+	}
+    GIMaterial { 
+	  diffuseColor 0 0 0
+	  specularColor 0 0 0
+	  emissionColor 50 50 50
+      EMISSION
+	}
+    GIMaterial { 
+	  diffuseColor 0.25 0.5 0.75
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.7 0.9 0.6
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      REFRACTION
+	}
+    GIMaterial { 
+	  diffuseColor 0.7 0.9 0.6
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      SPECULAR
+	}
+    GIMaterial { 
+	  diffuseColor 1 0.843 0
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.539 0.168 0.8828
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+}
+
+Group {
+    numObjects 12
+    MaterialIndex 0
+    Plane {
+        normal -1 0 0
+        offset 1
+    }
+    MaterialIndex 1
+    Plane {
+        normal 1 0 0
+        offset 99
+    }
+    MaterialIndex 2
+    Plane {
+        normal 0 0 -1
+        offset 0
+    }
+    Plane {
+        normal 0 -1 0
+        offset 0
+    }
+    Plane {
+        normal 0 1 0
+        offset 81.6
+    }
+    MaterialIndex 3
+    Plane {
+        normal 0 0 1
+        offset 0
+    }
+    MaterialIndex 9
+    Sphere {
+        center 87 16.5 47
+        radius 16.5
+    }
+    MaterialIndex 6
+    Sphere {
+        center 53 53 78
+        radius 5
+    }
+    
+    MaterialIndex 7
+    Sphere {
+        center 40 10 80
+        radius 10
+    }
+    MaterialIndex 8
+    Sphere {
+        center 50 70 90
+        radius 10
+    }
+    MaterialIndex 10
+    Sphere {
+        center 60 15 80
+        radius 15
+    }
+    MaterialIndex 11
+    Sphere {
+        center 20 15 80
+        radius 15
+    }
+}
+

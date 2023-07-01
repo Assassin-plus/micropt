@@ -1,0 +1,74 @@
+
+PerspectiveCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 200
+    height 400
+}
+
+Lights {
+    numLights 2
+    DirectionalLight {
+        direction 1 -1 1
+	color 0.7 0.7 0.7
+    }
+    DirectionalLight {
+        direction -1 0 0
+	color 0.3 0.3 0.3
+    }
+}
+
+Background {
+    color 0.7 0.7 0.7
+}
+
+Materials {
+    numMaterials 1
+    PhongMaterial {	
+        diffuseColor 0.79 0.66 0.44
+	specularColor 1 1 1 
+	shininess 20
+    }
+}
+
+Group {
+    numObjects 1
+    MaterialIndex 0
+    Transform {
+        Translate  50 52 50
+		Scale  10 10 10
+    Curves {
+        numCurves 1
+        BSplineCurve {
+            controls
+                [
+                    0 0 0
+                    -1 0 0
+                    -0.5 -1.5 0
+                    -1 -3 0
+                    0 -3 0
+                ]
+            knots
+                [
+                    0
+                    0
+                    0.2
+                    0.4
+                    0.6
+                    0.8
+                    1
+                    1
+                ]
+            axis
+            {
+                point1 0 0 0
+                point2 0 1 0
+            }
+        }
+    }
+    }
+
+}
+

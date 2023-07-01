@@ -1,0 +1,124 @@
+
+PerspectiveCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 300
+    height 300
+}
+
+Lights {
+    numLights 2
+    AreaLight {
+        position 50 80 20
+        color 1000 0 0
+        normal 0 -1 0
+        area 15
+    }
+    AreaLight {
+        position 70 80 100
+        color 0 0 1000
+        normal 0 -1 0
+        area 15
+    } 
+}
+
+Background {
+    color 0.1 0.1 0.1
+}
+
+Materials {
+    numMaterials 8
+    GIMaterial { 
+	  diffuseColor 0.75 0.25 0.25
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.25 0.25 0.75
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.75 0.75 0.75
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.5 0.5 0.5
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      DIFFUSE
+	}
+    GIMaterial { 
+	  diffuseColor 0.999 0.999 0.999
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      SPECULAR
+	}
+    GIMaterial { 
+	  diffuseColor 0.999 0.999 0.999
+	  specularColor 0 0 0
+	  emissionColor 0 0 0
+      REFRACTION
+	}
+    GIMaterial { 
+	  diffuseColor 0 0 0
+	  specularColor 0 0 0
+	  emissionColor 12 12 12
+	}
+    PhongMaterial {	
+        diffuseColor 0.79 0.66 0.44
+	specularColor 1 1 1 
+	shininess 20
+    }
+}
+
+Group {
+    numObjects 9
+    MaterialIndex 3
+    Plane {
+        normal -1 0 0
+        offset 1
+    }
+    Plane {
+        normal 1 0 0
+        offset 99
+    }
+    Plane {
+        normal 0 0 -1
+        offset 0
+    }
+    Plane {
+        normal 0 -1 0
+        offset 0
+    }
+    Plane {
+        normal 0 1 0
+        offset 81.6
+    }
+    Plane {
+        normal 0 0 1
+        offset 0
+    }
+    MaterialIndex 5
+    Sphere {
+        center 27 16.5 47
+        radius 16.5
+    }
+    
+    Sphere {
+        center 73 16.5 78
+        radius 16.5
+    }
+    Sphere {
+        center 50 50 81.6
+        radius 16.5
+    }
+
+}
+
