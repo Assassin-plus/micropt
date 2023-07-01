@@ -9,6 +9,7 @@ make -j8
 # Points
 
 分布式路径追踪: Distributed Path Tracing
+Developed based on smallpt.
 
 * 反射
 * 折射
@@ -33,26 +34,6 @@ SPPM
 
 * 焦散
 * > 因为渲染时间不足，所以只使用了简单球体的焦散
-  >
-
-# Results
-
-![1687685267763](image/report/1687685267763.png)
-
-Bspline旋转参数曲面
-
-![1687685419996](image/report/1687685419996.png)![1687685441703](image/report/1687685441703.png)![1687685600173](image/report/1687685600173.png)反射、折射、软阴影、抗锯齿、景深、Color Bleeding
-
-![1687685634737](image/report/1687685634737.png)
-
-obj，纹理贴图、法线插值
-
-![1687685759159](image/report/1687685759159.png)
-
-复杂网格曲面、纹理贴图、高光贴图
-
-
-SPPM:焦散
 
 # Structure & Honor Code
 
